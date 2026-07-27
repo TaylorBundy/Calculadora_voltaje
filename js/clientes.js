@@ -2,6 +2,78 @@ document.addEventListener(
 "DOMContentLoaded",
 mostrarClientes
 );
+async function cargarClientes(){
+
+
+try{
+
+
+const respuesta = await fetch(
+
+"https://solarpatagonia-api.onrender.com/clientes"
+
+);
+
+
+
+const clientes =
+await respuesta.json();
+
+
+
+const lista =
+document.getElementById(
+"listaClientes"
+);
+
+
+
+lista.innerHTML="";
+
+
+
+clientes.forEach(cliente=>{
+
+
+lista.innerHTML += `
+
+<div class="tarjeta">
+
+<h3>
+${cliente.nombre}
+</h3>
+
+<p>
+📞 ${cliente.telefono}
+</p>
+
+<p>
+📍 ${cliente.localidad}
+</p>
+
+<p>
+🏠 ${cliente.direccion}
+</p>
+
+</div>
+
+`;
+
+
+});
+
+
+
+}
+
+catch(error){
+
+console.error(error);
+
+}
+
+
+}
 async function guardarCliente(){
 
 
