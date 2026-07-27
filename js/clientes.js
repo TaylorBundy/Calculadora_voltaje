@@ -2,7 +2,6 @@ document.addEventListener(
 "DOMContentLoaded",
 mostrarClientes
 );
-
 async function guardarCliente(){
 
 
@@ -29,7 +28,8 @@ try {
 
 const respuesta = await fetch(
 
-"https://calculadora-voltaje.onrender.com/clientes"
+"https://calculadora-voltaje.onrender.com/clientes",
+
 {
 
 method:"POST",
@@ -300,4 +300,4 @@ e=>e.value=""
 );
 
 
-}
+                 }
