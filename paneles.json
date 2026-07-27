@@ -1,0 +1,15 @@
+[
+ {
+ "marca":"Jinko",
+ "modelo":"Tiger Neo",
+ "potencia":585,
+ "precio":180000
+ },
+
+ {
+ "marca":"Longi",
+ "modelo":"Hi-MO",
+ "potencia":550,
+ "precio":170000
+ }
+]
