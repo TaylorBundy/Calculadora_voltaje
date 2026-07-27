@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Instalaciones</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+<aside class="menu">
+
+<div class="logo">
+☀️ SolarPatagonia
+</div>
+
+<nav>
+
+<a href="index.html">🏠 Inicio</a>
+<a href="clientes.html">👤 Clientes</a>
+<a href="relevamiento.html">📋 Relevamiento</a>
+<a href="calculadora.html">⚡ Calculadora</a>
+<a href="presupuesto.html">📄 Presupuestos</a>
+<a href="instalaciones.html">🛠 Instalaciones</a>
+<a href="estadisticas.html">📊 Estadísticas</a>
+
+</nav>
+
+</aside>
+
+
+
+<main class="contenido">
+
+
+<h1>
+🛠 Instalaciones
+</h1>
+
+
+<section class="tarjeta">
+
+
+<h2>
+Nueva instalación
+</h2>
+
+
+<label>
+Cliente
+</label>
+
+<select id="clienteInstalacion">
+
+</select>
+
+
+<label>
+Estado
+</label>
+
+<select id="estado">
+
+<option>
+Contacto inicial
+</option>
+
+<option>
+Visita realizada
+</option>
+
+<option>
+Presupuesto enviado
+</option>
+
+<option>
+Aprobado
+</option>
+
+<option>
+Instalado
+</option>
+
+<option>
+Mantenimiento
+</option>
+
+</select>
+
+
+
+<label>
+Potencia instalada (kW)
+</label>
+
+<input id="potencia"
+type="number">
+
+
+
+<label>
+Observaciones
+</label>
+
+<textarea id="obsInstalacion"></textarea>
+
+
+<button onclick="guardarInstalacion()">
+
+💾 Guardar
+
+</button>
+
+
+</section>
+
+
+
+
+<section class="tarjeta">
+
+<h2>
+Obras registradas
+</h2>
+
+
+<div id="listaInstalaciones">
+
+</div>
+
+</section>
+
+
+</main>
+
+
+</div>
+
+
+<script src="js/almacenamiento.js"></script>
+<script src="js/instalaciones.js"></script>
+
+</body>
+
+</html>

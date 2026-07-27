@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Clientes - SolarPatagonia</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<aside class="menu">
+
+<div class="logo">
+☀️ SolarPatagonia
+</div>
+
+
+<nav>
+
+<a href="index.html">🏠 Inicio</a>
+
+<a href="clientes.html">👤 Clientes</a>
+
+<a href="calculadora.html">⚡ Calculadora</a>
+
+<a href="presupuesto.html">📄 Presupuestos</a>
+
+<a href="instalaciones.html">🛠 Instalaciones</a>
+
+</nav>
+
+</aside>
+
+
+
+<main class="contenido">
+
+
+<h1>
+👤 Clientes
+</h1>
+
+
+<section class="tarjeta">
+
+
+<h2>
+Nuevo cliente
+</h2>
+
+
+<label>
+Nombre
+</label>
+
+<input id="nombre">
+
+
+<label>
+Teléfono
+</label>
+
+<input id="telefono">
+
+
+<label>
+Email
+</label>
+
+<input id="email">
+
+
+<label>
+Localidad
+</label>
+
+<select id="localidad">
+
+<option>
+Villa Pehuenia
+</option>
+
+<option>
+Moquehue
+</option>
+
+<option>
+Aluminé
+</option>
+
+<option>
+Otra
+</option>
+
+</select>
+
+
+<label>
+Dirección
+</label>
+
+<input id="direccion">
+
+
+<label>
+Observaciones
+</label>
+
+<textarea id="observaciones"></textarea>
+
+
+
+<br>
+
+
+<button onclick="guardarCliente()">
+
+💾 Guardar cliente
+
+</button>
+
+
+</section>
+
+
+
+<section class="tarjeta">
+
+
+<h2>
+Clientes registrados
+</h2>
+
+
+<div id="listaClientes">
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+</div>
+
+
+<script src="js/almacenamiento.js"></script>
+
+<script src="js/clientes.js"></script>
+
+
+</body>
+
+</html>

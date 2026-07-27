@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Relevamiento Técnico</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<aside class="menu">
+
+<div class="logo">
+☀️ SolarPatagonia
+</div>
+
+
+<nav>
+
+<a href="index.html">🏠 Inicio</a>
+<a href="clientes.html">👤 Clientes</a>
+<a href="relevamiento.html">📋 Relevamiento</a>
+<a href="calculadora.html">⚡ Calculadora</a>
+<a href="presupuesto.html">📄 Presupuestos</a>
+
+</nav>
+
+
+</aside>
+
+
+
+<main class="contenido">
+
+
+<h1>
+📋 Relevamiento Técnico
+</h1>
+
+
+<section class="tarjeta">
+
+
+<h2>
+Datos generales
+</h2>
+
+
+<label>
+Cliente
+</label>
+
+<select id="cliente">
+
+</select>
+
+
+<label>
+Tipo de vivienda
+</label>
+
+<select id="tipoVivienda">
+
+<option>
+Permanente
+</option>
+
+<option>
+Fin de semana
+</option>
+
+<option>
+Cabaña turística
+</option>
+
+</select>
+
+
+
+<label>
+Cantidad de personas
+</label>
+
+<input id="personas" type="number" value="2">
+
+
+</section>
+
+
+
+
+<section class="tarjeta">
+
+
+<h2>
+Características del techo
+</h2>
+
+
+<label>
+Material
+</label>
+
+
+<select id="techo">
+
+<option>
+Chapa
+</option>
+
+<option>
+Teja
+</option>
+
+<option>
+Losa
+</option>
+
+<option>
+Madera
+</option>
+
+</select>
+
+
+
+<label>
+Orientación principal
+</label>
+
+
+<select id="orientacion">
+
+<option>
+Norte
+</option>
+
+<option>
+Noreste
+</option>
+
+<option>
+Este
+</option>
+
+<option>
+Oeste
+</option>
+
+<option>
+Sur
+</option>
+
+</select>
+
+
+
+<label>
+Inclinación aproximada (grados)
+</label>
+
+<input id="inclinacion" type="number">
+
+
+</section>
+
+
+
+
+
+<section class="tarjeta">
+
+
+<h2>
+Evaluación de sombras
+</h2>
+
+
+<select id="sombras">
+
+<option>
+Sin sombras
+</option>
+
+<option>
+Árboles
+</option>
+
+<option>
+Montañas
+</option>
+
+<option>
+Edificios
+</option>
+
+</select>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="tarjeta">
+
+
+<h2>
+Espacio disponible
+</h2>
+
+
+<label>
+Superficie aproximada m²
+</label>
+
+<input id="superficie" type="number">
+
+
+<label>
+Distancia al tablero eléctrico (metros)
+</label>
+
+<input id="distancia" type="number">
+
+
+</section>
+
+
+
+
+
+<section class="tarjeta">
+
+
+<h2>
+Observaciones técnicas
+</h2>
+
+
+<textarea id="observaciones"
+placeholder="Ej: acceso complicado, nieve acumulada, lugar para baterías...">
+</textarea>
+
+
+<br><br>
+
+
+<button onclick="guardarRelevamiento()">
+
+💾 Guardar relevamiento
+
+</button>
+
+
+</section>
+
+
+
+
+<section class="tarjeta">
+
+
+<h2>
+Relevamientos guardados
+</h2>
+
+
+<div id="listaRelevamientos">
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+</div>
+
+
+<script src="js/almacenamiento.js"></script>
+
+<script src="js/relevamiento.js"></script>
+
+
+</body>
+
+</html>

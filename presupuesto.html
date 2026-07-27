@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Presupuestos</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<aside class="menu">
+
+<div class="logo">
+☀️ SolarPatagonia
+</div>
+
+
+<nav>
+
+<a href="index.html">🏠 Inicio</a>
+<a href="clientes.html">👤 Clientes</a>
+<a href="calculadora.html">⚡ Calculadora</a>
+<a href="presupuesto.html">📄 Presupuestos</a>
+<a href="instalaciones.html">🛠 Instalaciones</a>
+
+</nav>
+
+
+</aside>
+
+
+
+<main class="contenido">
+
+
+<h1>
+📄 Presupuestos
+</h1>
+
+
+
+<section class="tarjeta">
+
+
+<h2>
+Nuevo presupuesto
+</h2>
+
+
+<label>
+Cliente
+</label>
+
+
+<select id="clientePresupuesto">
+
+</select>
+
+
+
+<label>
+Descripción del sistema
+</label>
+
+
+<textarea id="descripcion">
+
+Sistema solar fotovoltaico residencial
+
+</textarea>
+
+
+
+
+<label>
+Paneles
+</label>
+
+<input id="paneles"
+type="text"
+placeholder="Ej: 6 paneles 585W">
+
+
+
+<label>
+Inversor
+</label>
+
+<input id="inversor"
+type="text"
+placeholder="Ej: Inversor híbrido 5kW">
+
+
+
+<label>
+Baterías
+</label>
+
+<input id="baterias"
+type="text"
+placeholder="Ej: LiFePO4 10kWh">
+
+
+
+<label>
+Materiales ($)
+</label>
+
+<input id="materiales"
+type="number">
+
+
+
+<label>
+Mano de obra ($)
+</label>
+
+<input id="manoObra"
+type="number">
+
+
+
+<button onclick="guardarPresupuesto()">
+
+💾 Guardar presupuesto
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+<section class="tarjeta">
+
+
+<h2>
+Presupuestos generados
+</h2>
+
+
+<div id="listaPresupuestos">
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+</div>
+
+
+<script src="js/almacenamiento.js"></script>
+<script src="js/presupuesto.js"></script>
+
+
+</body>
+
+</html>
