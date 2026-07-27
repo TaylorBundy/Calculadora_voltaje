@@ -3,9 +3,100 @@ document.addEventListener(
 mostrarClientes
 );
 
+async function guardarCliente(){
 
 
-function guardarCliente(){
+const cliente = {
+
+    nombre: document.getElementById("nombre").value,
+
+    telefono: document.getElementById("telefono").value,
+
+    email: document.getElementById("email").value,
+
+    localidad: document.getElementById("localidad").value,
+
+    direccion: document.getElementById("direccion").value,
+
+    observaciones: document.getElementById("observaciones").value
+
+};
+
+
+
+try {
+
+
+const respuesta = await fetch(
+
+"https://calculadora-voltaje.onrender.com/clientes"
+{
+
+method:"POST",
+
+headers:{
+
+"Content-Type":"application/json"
+
+},
+
+body:JSON.stringify(cliente)
+
+}
+
+);
+
+
+
+const resultado = await respuesta.json();
+
+
+
+if(respuesta.ok){
+
+
+alert(
+"Cliente guardado correctamente"
+);
+
+
+limpiarFormulario();
+
+
+cargarClientes();
+
+
+}else{
+
+
+alert(
+"Error: "+resultado.error
+);
+
+
+}
+
+
+
+}
+
+catch(error){
+
+
+console.error(error);
+
+
+alert(
+"No se pudo conectar con el servidor"
+);
+
+
+}
+
+
+}
+
+function guardarCliente2(){
 
 
 let cliente={
