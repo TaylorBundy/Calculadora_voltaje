@@ -1,0 +1,25 @@
+[
+ {
+  "marca":"Pylontech",
+  "modelo":"US5000",
+  "capacidad":4.8,
+  "voltaje":48,
+  "precio":1500000
+ },
+
+ {
+  "marca":"Dyness",
+  "modelo":"B4850",
+  "capacidad":2.4,
+  "voltaje":48,
+  "precio":850000
+ },
+
+ {
+  "marca":"LiTime",
+  "modelo":"LiFePO4",
+  "capacidad":5,
+  "voltaje":12,
+  "precio":700000
+ }
+]

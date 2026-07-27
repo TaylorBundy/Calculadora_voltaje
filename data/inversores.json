@@ -1,0 +1,25 @@
+[
+ {
+  "marca":"Growatt",
+  "modelo":"SPF5000ES",
+  "potencia":5000,
+  "voltaje":48,
+  "precio":1900000
+ },
+
+ {
+  "marca":"Deye",
+  "modelo":"SUN-5K",
+  "potencia":5000,
+  "voltaje":48,
+  "precio":2300000
+ },
+
+ {
+  "marca":"Victron",
+  "modelo":"MultiPlus",
+  "potencia":3000,
+  "voltaje":48,
+  "precio":2800000
+ }
+]

@@ -1,0 +1,36 @@
+[
+ {
+  "nombre":"Heladera",
+  "potencia":120
+ },
+
+ {
+  "nombre":"Freezer",
+  "potencia":200
+ },
+
+ {
+  "nombre":"TV LED",
+  "potencia":80
+ },
+
+ {
+  "nombre":"Router WiFi",
+  "potencia":15
+ },
+
+ {
+  "nombre":"Bomba de agua",
+  "potencia":800
+ },
+
+ {
+  "nombre":"Luz LED",
+  "potencia":10
+ },
+
+ {
+  "nombre":"Notebook",
+  "potencia":60
+ }
+]

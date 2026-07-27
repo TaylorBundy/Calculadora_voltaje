@@ -1,0 +1,9 @@
+{
+ "instalacionBasica":500000,
+ "metroCableSolar":3500,
+ "estructuraPanel":45000,
+ "conectorMC4":2500,
+ "fusibleDC":15000,
+ "dps":60000,
+ "tablero":120000
+}

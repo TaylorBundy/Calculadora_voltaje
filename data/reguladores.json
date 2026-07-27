@@ -1,0 +1,15 @@
+[
+ {
+  "marca":"Victron",
+  "modelo":"SmartSolar MPPT",
+  "corriente":100,
+  "precio":450000
+ },
+
+ {
+  "marca":"Epever",
+  "modelo":"Tracer",
+  "corriente":80,
+  "precio":250000
+ }
+]
